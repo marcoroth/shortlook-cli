@@ -20,6 +20,8 @@ module Shortlook
 
       def execute(*)
         config = TTY::Config.new
+        config.append_path(Dir.home)
+        
         spinner = TTY::Spinner.new(":spinner Fetching Apps for '#{@name}'", format: :bouncing_ball)
         spinner.auto_spin
 
@@ -37,11 +39,11 @@ module Shortlook
         spinner.stop
 
         begin
-          config.read('config.yml')
+          config.read("#{Dir.home}/.shortlook.yml")
           author = config.fetch(:author)
           bundle_prefix = config.fetch(:bundle_prefix)
         rescue TTY::Config::ReadError
-          config.filename = 'config'
+          config.filename = '.shortlook'
           author = ENV['USER']
           bundle_prefix = 'ch.marcoroth'
         end
@@ -54,7 +56,7 @@ module Shortlook
 
         config.set(:author, value: author)
         config.set(:bundle_prefix, value: bundle_prefix)
-        config.write
+        config.write(force: true)
 
         bundle_id = selected['bundleId']
         provider_name = "ShortLook-#{name.delete(' ')}"
