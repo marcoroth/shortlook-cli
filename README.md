@@ -34,7 +34,7 @@ Commands:
 
 To start the Provider generator use the `provider` command followed by the search term of the app you want to build a provider for:
 
-```bash
+```
 $ shortlook provider whatsapp
 
 (    ● ) Fetching Apps for 'whatsapp'
