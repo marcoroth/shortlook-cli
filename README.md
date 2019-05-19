@@ -2,21 +2,22 @@
 
 This is a CLI for scaffolding a ShortLook Provider
 
+Learn more about ShortLook itself [here](https://dynastic.co/shortlook).
+
+If you are looking for ShortLook providers you can find them [here](https://github.com/marcoroth?utf8=✓&tab=repositories&q=ShortLook-&type=&language=objective-c) or [here](https://repo.dynastic.co).
+
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'shortlook'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+This CLI runs on Ruby. Ensure you have Ruby installed before executing the following command:
 
     $ gem install shortlook
+
+You can check if Ruby is installed with the following command
+
+```
+$ ruby -v
+ruby 2.6.2p47 (2019-03-13 revision 67232) [x86_64-darwin18]
+```
 
 ## Usage
 
