@@ -1,0 +1,5 @@
+# <%= name %> <%= type[:display] %> Provider for ShortLook
+
+Show <%= name %> <%= type[:display] %> in ShortLook when you receive a <%= name %> notification!
+
+(This is not ShortLook itself, but a plugin for it)

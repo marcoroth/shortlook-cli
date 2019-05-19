@@ -1,0 +1,9 @@
+Package: <%= provider_bundle_id %>
+Name: <%= name %> <%= type[:display] %> for ShortLook
+Depends: mobilesubstrate, co.dynastic.ios.tweak.shortlook
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Show <%= name %> <%= type[:display] %> in ShortLook when you receive a <%= name %> notification!
+Maintainer: <%= author %>
+Author: <%= author %>
+Section: Tweaks (ShortLook)

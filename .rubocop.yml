@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - bin/*
+    - spec/**/*
+
+Metrics/MethodLength:
+  Max: 45
+
+Metrics/AbcSize:
+  Max: 45
+
+Metrics/LineLength:
+  Max: 200
+
+Style/Documentation:
+  Enabled: false
