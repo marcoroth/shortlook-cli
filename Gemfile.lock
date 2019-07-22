@@ -38,7 +38,7 @@ GEM
       equatable (~> 0.6)
       tty-color (~> 0.5)
     public_suffix (3.1.1)
-    rake (12.3.2)
+    rake (12.3.3)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
