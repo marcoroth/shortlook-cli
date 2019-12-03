@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'lhc', '~> 10.3'
+  spec.add_dependency 'lhc', '>= 10.3', '< 12.0'
   spec.add_dependency 'pastel', '~> 0.7.2'
   spec.add_dependency 'thor', '~> 0.20.0'
   spec.add_dependency 'tty-command', '>= 0.8', '< 0.10'
