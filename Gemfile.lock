@@ -29,7 +29,7 @@ GEM
     ffi (1.11.3)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
-    lhc (11.0.0)
+    lhc (11.0.1)
       activesupport (>= 4.2)
       addressable
       typhoeus (>= 0.11)
