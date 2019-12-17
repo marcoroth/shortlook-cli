@@ -53,7 +53,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.0)
-    thor (1.0.0)
+    thor (1.0.1)
     thread_safe (0.3.6)
     tty-color (0.5.0)
     tty-command (0.9.0)
