@@ -38,7 +38,7 @@ GEM
     minitest (5.13.0)
     necromancer (0.5.1)
     parallel (1.19.1)
-    parser (2.6.5.0)
+    parser (2.7.0.1)
       ast (~> 2.4.0)
     pastel (0.7.3)
       equatable (~> 0.6)
@@ -59,10 +59,10 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.0)
-    rubocop (0.77.0)
+    rubocop (0.79.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.6)
+      parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
@@ -100,7 +100,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 0.77.0)
+  rubocop (~> 0.79.0)
   shortlook!
 
 BUNDLED WITH
