@@ -38,7 +38,7 @@ GEM
     minitest (5.14.0)
     necromancer (0.5.1)
     parallel (1.19.1)
-    parser (2.6.5.0)
+    parser (2.7.0.2)
       ast (~> 2.4.0)
     pastel (0.7.3)
       equatable (~> 0.6)
@@ -46,6 +46,7 @@ GEM
     public_suffix (4.0.3)
     rainbow (3.0.0)
     rake (13.0.1)
+    rexml (3.2.4)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -59,11 +60,12 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.0)
-    rubocop (0.77.0)
+    rubocop (0.80.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.6)
+      parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
+      rexml
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
@@ -89,7 +91,7 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
-    unicode-display_width (1.6.0)
+    unicode-display_width (1.6.1)
     wisper (2.0.1)
     zeitwerk (2.2.2)
 
@@ -100,7 +102,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 0.77.0)
+  rubocop (~> 0.80.0)
   shortlook!
 
 BUNDLED WITH
