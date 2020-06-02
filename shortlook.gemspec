@@ -27,12 +27,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'pastel', '~> 0.7.2'
   spec.add_dependency 'thor', '>= 0.20', '< 1.1'
   spec.add_dependency 'tty-command', '>= 0.8', '< 0.10'
-  spec.add_dependency 'tty-config', '~> 0.3.0'
-  spec.add_dependency 'tty-prompt', '>= 0.18', '< 0.21'
+  spec.add_dependency 'tty-config', '>= 0.3', '< 0.5'
+  spec.add_dependency 'tty-prompt', '>= 0.18', '< 0.22'
   spec.add_dependency 'tty-spinner', '~> 0.9.0'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rubocop', '~> 0.77.0'
+  spec.add_development_dependency 'rubocop', '~> 0.85.0'
 end
