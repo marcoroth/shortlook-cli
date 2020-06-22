@@ -34,5 +34,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rubocop', '~> 0.85.0'
+  spec.add_development_dependency 'rubocop', '~> 0.86.0'
 end
