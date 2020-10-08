@@ -40,7 +40,7 @@ module Shortlook
         spinner.auto_spin
 
         url = "https://itunes.apple.com/search?limit=10&media=software&term=#{@name}"
-        results = JSON.parse(LHC.get(url).body)['results']
+        results = LHC.get(url).data.results
         @choices = results.map { |r| { name: "#{r['trackName']} (#{r['bundleId']})", value: r } }
         spinner.stop
       end
