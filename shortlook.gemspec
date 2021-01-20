@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'lhc', '>= 13.0'
   spec.add_dependency 'pastel', '~> 0.7.2'
-  spec.add_dependency 'thor', '>= 0.20', '< 1.1'
+  spec.add_dependency 'thor', '>= 0.20', '< 1.2'
   spec.add_dependency 'tty-command', '>= 0.8', '< 0.10'
   spec.add_dependency 'tty-config', '>= 0.3', '< 0.5'
   spec.add_dependency 'tty-prompt', '>= 0.18', '< 0.22'
