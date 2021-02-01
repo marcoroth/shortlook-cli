@@ -1,19 +1,11 @@
 # frozen_string_literal: true
 
 require 'thor'
+require_relative 'provider_helpers'
 
 module Shortlook
   class CLI < Thor
     include Thor::Actions
-
-    Error = Class.new(StandardError)
-
-    desc 'version', 'shortlook version'
-    def version
-      require_relative 'version'
-      puts "v#{Shortlook::VERSION}"
-    end
-    map %w[--version -v] => :version
 
     def self.source_root
       File.dirname(__FILE__)
@@ -24,34 +16,15 @@ module Shortlook
     end
 
     no_commands do
-      def class_name
-        @config[:class_name]
-      end
-
-      def bundle_id
-        @config[:bundle_id]
-      end
-
-      def provider_bundle_id
-        @config[:provider_bundle_id]
-      end
-
-      def name
-        @config[:name]
-      end
-
-      def type
-        @config[:type]
-      end
-
-      def author
-        @config[:author]
-      end
-
-      def provider_name
-        @config[:provider_name]
-      end
+      include ProviderHelpers
     end
+
+    desc 'version', 'shortlook version'
+    def version
+      require_relative 'version'
+      puts "v#{Shortlook::VERSION}"
+    end
+    map %w[--version -v] => :version
 
     desc 'provider NAME', 'Generate a scaffold ShortLook Provider'
     def provider(name)

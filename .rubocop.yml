@@ -1,7 +1,8 @@
 AllCops:
+  NewCops: enable
+  SuggestExtensions: false
   Exclude:
     - bin/*
-    - spec/**/*
 
 Metrics/AbcSize:
   Max: 45
@@ -24,47 +25,11 @@ Metrics/PerceivedComplexity:
 Layout/LineLength:
   Max: 200
 
-Layout/EmptyLinesAroundAttributeAccessor:
-  Enabled: true
-
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-
-Lint/RaiseException:
-  Enabled: true
-
-Lint/StructNewOverride:
-  Enabled: true
-
-Lint/DeprecatedOpenSSLConstant:
-  Enabled: true
-
-Lint/MixedRegexpCaptureTypes:
-  Enabled: true
+Lint/MissingSuper:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
 
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
-
-Style/ExponentialNotation:
-  Enabled: true
-
-Style/SlicingWithRange:
-  Enabled: true
-
 Style/SymbolArray:
   Enabled: false
-
-Style/RedundantRegexpCharacterClass:
-  Enabled: true
-
-Style/RedundantRegexpEscape:
-  Enabled: true
